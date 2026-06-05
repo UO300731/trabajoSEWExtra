@@ -24,16 +24,10 @@ class Svg(object):
     MARGEN_INF  = 430
 
     def __init__(self):
-        """
-        Crea el elemento raíz SVG con los atributos correctos.
-        version debe ser "1.1" (SVG 2.0 no está estandarizado).
-        Los atributos de presentación usan nombres con guion.
-        """
         self.raiz = ET.Element('svg')
         self.raiz.set('xmlns', 'http://www.w3.org/2000/svg')
         self.raiz.set('version', '1.1')
-        self.raiz.set('width',   str(self.ANCHO))
-        self.raiz.set('height',  str(self.ALTO))
+        # Quitamos width y height — solo dejamos viewBox
         self.raiz.set('viewBox', '0 0 {} {}'.format(self.ANCHO, self.ALTO))
 
     def addRect(self, x, y, ancho, alto, relleno, strokeWidth, stroke):

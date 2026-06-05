@@ -40,15 +40,36 @@ figure img {
 }
 
 
-
-/* Especificidad: (0,0,1) */
-video,
-audio {
+/* Especificidad: (0,0,2) */
+figure picture {
+    display: block;
     width: 100%;
-    max-width: 70rem;
 }
 
+/* Especificidad: (0,0,3) */
+figure picture img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+}
 
+/* Especificidad: (0,0,2) */
+figure video {
+    width: 100%;
+    max-width: 70rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Especificidad: (0,0,2) */
+section audio {
+    width: 100%;
+    max-width: 70rem;
+    display: block;
+    margin: 1rem auto;
+}
 /* Especificidad: (0,0,1) */
 table {
     display: block;
@@ -112,6 +133,12 @@ div.mapa-contenedor {
     background-color: #EEE;
 	color: inherit; /* garantiza herencia explícita */
 }
+
+section svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
  
 /* RESPONSIVE TABLET — RUTAS */
  
@@ -174,8 +201,8 @@ div.mapa-contenedor {
         justify-content: center;
     }
 	/* Especificidad: (0,0,1)  */
-    figure img {
-        height: 18rem; /* redefinición por media query */
+     figure img {
+        height: auto; /* redefinición por media query */
     }
 }
 
@@ -194,6 +221,20 @@ div.mapa-contenedor {
     }
 	/* Especificidad: (0,0,1)  */
     figure img {
+        height: 12rem; /* redefinición por media query */
+    }
+}
+
+@media (max-width: 799px) {
+    /* Especificidad: (0,0,3) */
+    figure picture img {
+        height: 18rem; /* redefinición por media query */
+    }
+}
+
+@media (max-width: 465px) {
+    /* Especificidad: (0,0,3) */
+    figure picture img {
         height: 12rem; /* redefinición por media query */
     }
 }

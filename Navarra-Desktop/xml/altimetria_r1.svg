@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900" height="500" viewBox="0 0 900 500">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 500">
   <rect x="0" y="0" width="900" height="500" fill="white" stroke-width="1" stroke="#cccccc" />
   <text x="80" y="35" font-size="16" font-family="Verdana" style="font-weight:bold; fill:#333333;">Altimetría: Ruta Medieval de Olite</text>
   <line x1="80" y1="430.0" x2="870" y2="430.0" stroke="#dddddd" stroke-width="1" />

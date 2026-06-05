@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-    <link rel="icon" type="image/x-icon" href="multimedia/icono.ico" />
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 <main>
 
     <!-- INFORMACIÓN GENERAL -->
-    <section id="info-general">
+    <section>
 
         <h2>Gastronomía de Navarra</h2>
 
@@ -53,12 +53,14 @@
         </p>
 
         <!-- IMAGEN ADAPTABLE Y ACCESIBLE -->
-        <picture>
-				<source media=" (max-width:799px)" srcset="multimedia/gastronomia-tablet.jpg" />
-				<source media=" (min-width:800px)" srcset="multimedia/gastronomia.jpg" />
-				<source media=" (max-width:465px)" srcset="multimedia/gastronomia-movil.jpg" />
-				<img alt="Gastronomia" src="multimedia/gastronomia.jpg" />
-		</picture>
+        <figure>
+			<picture>
+				<source media="(max-width:465px)" srcset="multimedia/gastronomia-movil.jpg" />
+				<source media="(max-width:799px)" srcset="multimedia/gastronomia-tablet.jpg" />
+				<source media="(min-width:800px)" srcset="multimedia/gastronomia.jpg" />
+				<img alt="Gastronomía navarra" src="multimedia/gastronomia.jpg" />
+			</picture>
+		</figure>
 
     </section>
 
@@ -165,17 +167,13 @@
 
         <h2>Vídeo sobre la gastronomía navarra</h2>
 
-        <video controls preload="auto">
-
-            <source src="multimedia/gastronomia.mp4"
-                    type="video/mp4" />
-
-            <source src="multimedia/gastronomia.webm"
-                    type="video/webm" />
-
-            Tu navegador no soporta vídeo HTML5.
-
-        </video>
+        <figure>
+			<video controls preload="auto">
+				<source src="multimedia/gastronomia.mp4" type="video/mp4" />
+				<source src="multimedia/gastronomia.webm" type="video/webm" />
+				Tu navegador no soporta vídeo HTML5.
+			</video>
+		</figure>
 
     </section>
 
@@ -184,17 +182,13 @@
 
         <h2>Audio tradicional</h2>
 
-        <audio controls>
-
-            <source src="multimedia/audio.mp3"
-                    type="audio/mpeg" />
-
-            <source src="multimedia/audio.wav"
-                    type="audio/wav" />
-
-            Tu navegador no soporta audio HTML5.
-
-        </audio>
+       
+		<audio controls>
+			<source src="multimedia/audio.mp3" type="audio/mpeg" />
+			<source src="multimedia/audio.wav" type="audio/wav" />
+				Tu navegador no soporta audio HTML5.
+		</audio>
+		
 
     </section>
 
