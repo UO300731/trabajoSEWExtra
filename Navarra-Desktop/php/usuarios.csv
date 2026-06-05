@@ -1,0 +1,4 @@
+id_usuario,nombre,apellidos,email,password_hash,telefono,fecha_registro
+1,Ana,García López,ana@example.com,$2y$12$examplehashAna,666111222,2026-01-10 10:00:00
+2,Carlos,Martínez Ruiz,carlos@example.com,$2y$12$examplehashCarlos,677333444,2026-01-15 11:30:00
+3,Elena,Fernández Sanz,elena@example.com,$2y$12$examplehashElena,688555666,2026-02-01 09:00:00

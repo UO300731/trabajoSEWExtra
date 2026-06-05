@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Navarra - Meteorología</title>
+
+    <meta name="author" content="Olai Navarro Baizan" />
+    <meta name="description" content="Información meteorológica de Navarra" />
+    <meta name="keywords" content="Navarra, meteorología, clima, previsión" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="estilo/layout.css" />
+
+    <link rel="icon" href="multimedia/icono.ico" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/meteorologia.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">Navarra Turismo</a>
+    </h1>
+
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="gastronomia.html">Gastronomía</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="meteorologia.html" class="activo">Meteorología</a>
+        <a href="juego.html">Juego</a>
+        <a href="reservas.php">Reservas</a>
+        <a href="ayuda.html">Ayuda</a>
+    </nav>
+
+</header>
+
+<nav aria-label="Ruta de navegación">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><strong>Meteorología</strong></li>
+    </ol>
+</nav>
+
+<main>
+
+    <section>
+
+        <h2>Meteorología de la capital</h2>
+
+        <p>
+            Consulta el tiempo actual y la previsión de 7 días en la capital de Navarra.
+        </p>
+
+    </section>
+
+    <!-- AQUÍ SE INSERTA TODO DINÁMICAMENTE -->
+	<section>
+	
+		<h2>Datos meteorológicos</h2>
+
+	</section>
+
+</main>
+
+<footer>
+
+    <p>Proyecto: Software y Estándares para la Web</p>
+    <p>Grado en Ingeniería Informática del Software</p>
+
+</footer>
+
+<script>
+
+$(document).ready(() => {
+
+    const pamplona = new Ciudad(
+        "Pamplona",
+        "España",
+        "pamplonica",
+        42.8125,
+        -1.6458
+    );
+
+    pamplona.getMeteorologia()
+        .then(json => {
+
+            const datos = pamplona.procesarMeteorologia(json);
+
+            const contenedor = $("main section").eq(1);
+
+            pamplona.mostrarMeteorologia(datos, contenedor);
+
+        })
+        .catch(error => {
+            console.error("Error cargando meteorología:", error);
+        });
+
+});
+
+</script>
+
+</body>
+</html>

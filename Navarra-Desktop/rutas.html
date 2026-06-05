@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Turísticas - Navarra</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/layout.css">
+	<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tPiYDa3u7V70IXN2xrjlB0yXKONelfU"></script>
+	<script defer src="js/rutas.js"></script>
+</head>
+<body>
+
+
+<header>
+
+    <h1><a href="index.html">Navarra Turismo</a></h1>
+
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="gastronomia.html">Gastronomía</a>
+        <a href="rutas.html" class="activo">Rutas</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="juego.html">Juego</a>
+        <a href="reservas.php">Reservas</a>
+        <a href="ayuda.html" >Ayuda</a>
+    </nav>
+
+</header>
+
+<nav aria-label="Ruta de navegación">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><strong>Rutas</strong></li>
+    </ol>
+</nav>
+
+<main>
+    <section>
+        <h2>Rutas Turísticas de Navarra</h2>
+         
+        <nav role="tablist" aria-label="Selección de ruta">
+            <p>Cargando rutas...</p>
+        </nav>
+
+        <!--
+            Este <div> está justificado por el enunciado: se permite el uso
+            de bloques anónimos para la representación de mapas dinámicos y
+            el contenido generado por Google Maps API requiere un contenedor div.
+            El selector en JS es: main section div
+        -->
+        <div>
+            <p>Cargando información de la ruta...</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Navarra Turismo &copy; 2026</p>
+</footer>
+
+
+</body>
+</html>

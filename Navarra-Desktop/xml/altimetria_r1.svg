@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900" height="500" viewBox="0 0 900 500">
+  <rect x="0" y="0" width="900" height="500" fill="white" stroke-width="1" stroke="#cccccc" />
+  <text x="80" y="35" font-size="16" font-family="Verdana" style="font-weight:bold; fill:#333333;">Altimetría: Ruta Medieval de Olite</text>
+  <line x1="80" y1="430.0" x2="870" y2="430.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="430.0" x2="80" y2="430.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="435.0" font-size="11" font-family="Verdana" style="fill:#555555;">395 m</text>
+  <line x1="80" y1="356.0" x2="870" y2="356.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="356.0" x2="80" y2="356.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="361.0" font-size="11" font-family="Verdana" style="fill:#555555;">396 m</text>
+  <line x1="80" y1="282.0" x2="870" y2="282.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="282.0" x2="80" y2="282.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="287.0" font-size="11" font-family="Verdana" style="fill:#555555;">397 m</text>
+  <line x1="80" y1="208.0" x2="870" y2="208.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="208.0" x2="80" y2="208.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="213.0" font-size="11" font-family="Verdana" style="fill:#555555;">398 m</text>
+  <line x1="80" y1="134.0" x2="870" y2="134.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="134.0" x2="80" y2="134.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="139.0" font-size="11" font-family="Verdana" style="fill:#555555;">399 m</text>
+  <line x1="80" y1="60.0" x2="870" y2="60.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="60.0" x2="80" y2="60.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="65.0" font-size="11" font-family="Verdana" style="fill:#555555;">400 m</text>
+  <line x1="80" y1="60" x2="80" y2="430" stroke="#555555" stroke-width="2" />
+  <text x="15" y="245" font-size="12" font-family="Verdana" style="fill:#333333; writing-mode:tb; glyph-orientation-vertical:0;">Altitud (m)</text>
+  <line x1="80.0" y1="430" x2="80.0" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="65.0" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">0 m</text>
+  <line x1="80.0" y1="430" x2="80.0" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="65.0" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">0 m</text>
+  <line x1="195.609756097561" y1="430" x2="195.609756097561" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="180.609756097561" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">60 m</text>
+  <line x1="349.7560975609756" y1="430" x2="349.7560975609756" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="334.7560975609756" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">140 m</text>
+  <line x1="580.9756097560976" y1="430" x2="580.9756097560976" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="565.9756097560976" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">260 m</text>
+  <line x1="870" y1="430" x2="870" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="855" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">410 m</text>
+  <line x1="80" y1="430" x2="870" y2="430" stroke="#555555" stroke-width="2" />
+  <text x="435" y="480" font-size="12" font-family="Verdana" style="fill:#333333;">Distancia (m)</text>
+  <polyline points="80.0,60.0 80.0,208.0 195.609756097561,208.0 349.7560975609756,134.0 580.9756097560976,430.0 870,430 80,430 80.0,60.0" stroke="#1a6bb5" stroke-width="2" fill="rgba(26,107,181,0.25)" />
+  <circle cx="80.0" cy="60.0" r="5" fill="#c0392b" />
+  <text x="87.0" y="60.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Palacio Real de Olite</text>
+  <circle cx="80.0" cy="208.0" r="5" fill="#c0392b" />
+  <text x="87.0" y="208.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Iglesia de Santa María la Real</text>
+  <circle cx="195.609756097561" cy="208.0" r="5" fill="#c0392b" />
+  <text x="202.609756097561" y="208.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Plaza de los Teobaldos</text>
+  <circle cx="349.7560975609756" cy="134.0" r="5" fill="#c0392b" />
+  <text x="356.7560975609756" y="134.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Iglesia de San Pedro</text>
+  <circle cx="580.9756097560976" cy="430.0" r="5" fill="#c0392b" />
+  <text x="587.9756097560976" y="430.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Murallas medievales</text>
+</svg>

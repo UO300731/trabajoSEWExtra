@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas xmlns:xsi="http://www.uniovi.es"
+       xsi:noNamespaceSchemaLocation="rutas.xsd">
+
+    <!-- RUTA 1: OLITE -->
+    <ruta id="r1">
+
+        <nombre>Ruta Medieval de Olite</nombre>
+        <tipo>Histórica y monumental</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio opcional="si"></fechaInicio>
+        <horaInicio opcional="si"></horaInicio>
+        <duracion>3 horas</duracion>
+        <agencia>NavarraTur</agencia>
+
+        <descripcion>
+            Recorrido por la ciudad medieval de Olite, antigua corte de los reyes de Navarra.
+        </descripcion>
+
+        <publico>Todos los públicos</publico>
+
+        <inicio>
+            <lugar>Olite</lugar>
+            <direccion>Plaza Carlos III El Noble, Olite</direccion>
+            <coordenadas>
+                <longitud>-1.6496</longitud>
+                <latitud>42.4815</latitud>
+                <altitud>397</altitud>
+            </coordenadas>
+        </inicio>
+
+        <recomendacion>9</recomendacion>
+
+        <referencias>
+            <referencia>https://es.wikipedia.org/wiki/Olite</referencia>
+            <referencia>https://www.turismo.navarra.es</referencia>
+            <referencia>https://www.castillodeolite.es</referencia>
+        </referencias>
+
+        <hitos>
+
+            <hito>
+                <nombre>Palacio Real de Olite</nombre>
+                <descripcion>Palacio Real de los Reyes de Navarra, declarado Monumento Nacional en 1925.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6496</longitud>
+                    <latitud>42.4816</latitud>
+                    <altitud>400</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="0">0</distancia>
+                <fotografias>
+                    <fotografia>palacio_olite.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Iglesia de Santa María la Real</nombre>
+                <descripcion>Iglesia gótica del siglo XIII con una de las portadas más importantes de la escultura gótica navarra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6501</longitud>
+                    <latitud>42.4812</latitud>
+                    <altitud>398</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="60">60</distancia>
+                <fotografias>
+                    <fotografia>iglesia_santa_maria.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Plaza de los Teobaldos</nombre>
+                <descripcion>Plaza histórica frente al Palacio Viejo, hoy Parador de Turismo.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6503</longitud>
+                    <latitud>42.4819</latitud>
+                    <altitud>398</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="80">80</distancia>
+                <fotografias>
+                    <fotografia>plaza_teobaldos.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Iglesia de San Pedro</nombre>
+                <descripcion>Iglesia románica con claustro y torre gótica rematada en aguja.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6488</longitud>
+                    <latitud>42.4820</latitud>
+                    <altitud>399</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="120">120</distancia>
+                <fotografias>
+                    <fotografia>iglesia_san_pedro.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Murallas medievales</nombre>
+                <descripcion>Restos defensivos del recinto amurallado medieval de Olite.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6510</longitud>
+                    <latitud>42.4808</latitud>
+                    <altitud>395</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="150">150</distancia>
+                <fotografias>
+                    <fotografia>murallas_olite.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+        </hitos>
+
+        <planimetria>planimetria_r1.kml</planimetria>
+        <altimetria>altimetria_r1.svg</altimetria>
+
+    </ruta>
+
+    <!-- RUTA 2: SELVA DE IRATI -->
+    <ruta id="r2">
+
+        <nombre>Selva de Irati</nombre>
+        <tipo>Paisajística y natural</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio opcional="si"></fechaInicio>
+        <horaInicio opcional="si"></horaInicio>
+        <duracion>5 horas</duracion>
+        <agencia>Sin agencia</agencia>
+
+        <descripcion>
+            Uno de los bosques de hayas y abetos mejor conservados de Europa, con 17.195 hectáreas en los valles de Aezkoa y Salazar.
+        </descripcion>
+
+        <publico>Personas con buena forma física</publico>
+
+        <inicio>
+            <lugar>Orbaizeta</lugar>
+            <direccion>Carretera NA-140, Valle de Aezkoa</direccion>
+            <coordenadas>
+                <longitud>-1.2270</longitud>
+                <latitud>42.9700</latitud>
+                <altitud>900</altitud>
+            </coordenadas>
+        </inicio>
+
+        <recomendacion>10</recomendacion>
+
+        <referencias>
+            <referencia>https://es.wikipedia.org/wiki/Selva_de_Irati</referencia>
+            <referencia>https://turismo.navarra.es</referencia>
+            <referencia>https://www.irati.org</referencia>
+        </referencias>
+
+        <hitos>
+
+            <hito>
+                <nombre>Embalse de Irabia</nombre>
+                <descripcion>Lago artificial construido en 1922, rodeado de hayedo-abetal. Punto de partida del recorrido circular.</descripcion>
+                <coordenadas>
+                    <longitud>-1.2190</longitud>
+                    <latitud>42.9750</latitud>
+                    <altitud>820</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="0">0</distancia>
+                <fotografias>
+                    <fotografia>embalse_irabia.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Fábrica de armas de Orbaizeta</nombre>
+                <descripcion>Ruinas industriales del siglo XVIII, antigua fábrica de armas en plena selva.</descripcion>
+                <coordenadas>
+                    <longitud>-1.2350</longitud>
+                    <latitud>42.9650</latitud>
+                    <altitud>890</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="400">400</distancia>
+                <fotografias>
+                    <fotografia>fabrica_orbaizeta.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Hayedo central</nombre>
+                <descripcion>Corazón del bosque de hayas centenario, segundo mayor hayedo-abetal de Europa.</descripcion>
+                <coordenadas>
+                    <longitud>-1.2100</longitud>
+                    <latitud>42.9800</latitud>
+                    <altitud>950</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="500">500</distancia>
+                <fotografias>
+                    <fotografia>hayedo_irati.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Mirador de Tapla</nombre>
+                <descripcion>Vista panorámica del valle de Aezkoa y las cimas del Pirineo.</descripcion>
+                <coordenadas>
+                    <longitud>-1.2050</longitud>
+                    <latitud>42.9820</latitud>
+                    <altitud>980</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="600">600</distancia>
+                <fotografias>
+                    <fotografia>mirador_tapla.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Refugio forestal de Irati</nombre>
+                <descripcion>Punto de descanso en la ruta, refugio de montaña en el interior del bosque.</descripcion>
+                <coordenadas>
+                    <longitud>-1.2000</longitud>
+                    <latitud>42.9780</latitud>
+                    <altitud>970</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="300">300</distancia>
+                <fotografias>
+                    <fotografia>refugio_irati.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+        </hitos>
+
+        <planimetria>planimetria_r2.kml</planimetria>
+        <altimetria>altimetria_r2.svg</altimetria>
+
+    </ruta>
+
+    <!-- RUTA 3: BARDENAS REALES -->
+    <ruta id="r3">
+
+        <nombre>Bardenas Reales</nombre>
+        <tipo>Paisajística / Semi-desierto</tipo>
+        <transporte>Bicicleta</transporte>
+        <fechaInicio opcional="si"></fechaInicio>
+        <horaInicio opcional="si"></horaInicio>
+        <duracion>4 horas</duracion>
+        <agencia>NaturaTur</agencia>
+
+        <descripcion>
+            Parque natural semidesértico único en Europa, Reserva de la Biosfera de la UNESCO, con formaciones geológicas de arcilla, yesos y arenisca.
+        </descripcion>
+
+        <publico>Todos los públicos</publico>
+
+        <inicio>
+            <lugar>Arguedas</lugar>
+            <direccion>Centro de visitantes de las Bardenas Reales, Arguedas</direccion>
+            <coordenadas>
+                <longitud>-1.5280</longitud>
+                <latitud>42.1770</latitud>
+                <altitud>280</altitud>
+            </coordenadas>
+        </inicio>
+
+        <recomendacion>10</recomendacion>
+
+        <referencias>
+            <referencia>https://es.wikipedia.org/wiki/Bardenas_Reales</referencia>
+            <referencia>https://turismo.navarra.es</referencia>
+            <referencia>https://www.bardenasreales.es</referencia>
+        </referencias>
+
+        <hitos>
+
+            <hito>
+                <nombre>Castildetierra</nombre>
+                <descripcion>Formación geológica icónica de las Bardenas, cabezo erosionado símbolo del parque, a 290 m de altitud.</descripcion>
+                <coordenadas>
+                    <longitud>-1.5161</longitud>
+                    <latitud>42.2103</latitud>
+                    <altitud>290</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="0">0</distancia>
+                <fotografias>
+                    <fotografia>castildetierra.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Plana de la Negra</nombre>
+                <descripcion>Zona elevada de la Bardena Blanca con vistas panorámicas al desierto.</descripcion>
+                <coordenadas>
+                    <longitud>-1.5350</longitud>
+                    <latitud>42.1700</latitud>
+                    <altitud>320</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="700">700</distancia>
+                <fotografias>
+                    <fotografia>plana_negra.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Mirador de Juan Obispo</nombre>
+                <descripcion>Punto panorámico con vista sobre la Bardena Blanca y el Cabezo de la Negra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.5150</longitud>
+                    <latitud>42.1750</latitud>
+                    <altitud>310</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="500">500</distancia>
+                <fotografias>
+                    <fotografia>mirador_juan_obispo.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Ralla de Eguaras</nombre>
+                <descripcion>Espectacular cárcava de erosión natural con formas caprichosas talladas por el agua.</descripcion>
+                <coordenadas>
+                    <longitud>-1.5050</longitud>
+                    <latitud>42.1800</latitud>
+                    <altitud>295</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="600">600</distancia>
+                <fotografias>
+                    <fotografia>ralla_eguaras.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Centro de visitantes</nombre>
+                <descripcion>Fin de la ruta. El centro ofrece exposición permanente sobre la geología y fauna de las Bardenas.</descripcion>
+                <coordenadas>
+                    <longitud>-1.5280</longitud>
+                    <latitud>42.1770</latitud>
+                    <altitud>280</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="400">400</distancia>
+                <fotografias>
+                    <fotografia>centro_visitantes_bardenas.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+        </hitos>
+
+        <planimetria>planimetria_r3.kml</planimetria>
+        <altimetria>altimetria_r3.svg</altimetria>
+
+    </ruta>
+
+    <!-- RUTA 4: PAMPLONA CASCO ANTIGUO -->
+    <ruta id="r4">
+
+        <nombre>Ruta Histórica por el Casco Antiguo de Pamplona</nombre>
+        <tipo>Histórica y cultural</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio opcional="si"></fechaInicio>
+        <horaInicio opcional="si"></horaInicio>
+        <duracion>2 horas</duracion>
+        <agencia>Turismo de Navarra</agencia>
+
+        <descripcion>
+            Recorrido por el casco histórico de Pamplona, capital de Navarra, ciudad fundada por el general romano Pompeyo en el 74 a.C. Declarada Patrimonio Cultural, la ruta discurre por sus calles medievales, la catedral gótica, las murallas y la famosa Plaza del Castillo.
+        </descripcion>
+
+        <publico>Todos los públicos, incluidos tercera edad y familias con niños</publico>
+
+        <inicio>
+            <lugar>Pamplona</lugar>
+            <direccion>Plaza del Castillo, Pamplona</direccion>
+            <coordenadas>
+                <longitud>-1.6436</longitud>
+                <latitud>42.8188</latitud>
+                <altitud>449</altitud>
+            </coordenadas>
+        </inicio>
+
+        <recomendacion>9</recomendacion>
+
+        <referencias>
+            <referencia>https://es.wikipedia.org/wiki/Pamplona</referencia>
+            <referencia>https://www.turismo.navarra.es/esp/propuestas/Recurso/fichaRecurso.aspx?id=2027</referencia>
+            <referencia>https://www.guiarepsol.com/es/viajar/vamos-de-excursion/cinco-rutas-por-pamplona-con-la-distancia-de-un-encierro/</referencia>
+        </referencias>
+
+        <hitos>
+
+            <hito>
+                <nombre>Plaza del Castillo</nombre>
+                <descripcion>Corazón de Pamplona, gran plaza porticada donde se concentra la vida social de la ciudad desde la Edad Media.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6436</longitud>
+                    <latitud>42.8188</latitud>
+                    <altitud>449</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="0">0</distancia>
+                <fotografias>
+                    <fotografia>plaza_castillo_pamplona.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Catedral de Santa María la Real</nombre>
+                <descripcion>Catedral gótica del siglo XIV-XV con claustro y museo diocesano. Una de las más importantes del Camino de Santiago.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6390</longitud>
+                    <latitud>42.8219</latitud>
+                    <altitud>455</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="450">450</distancia>
+                <fotografias>
+                    <fotografia>catedral_pamplona.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Murallas de Pamplona</nombre>
+                <descripcion>Imponente sistema defensivo del siglo XVI, uno de los mejor conservados de Europa. Declaradas Bien de Interés Cultural.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6360</longitud>
+                    <latitud>42.8230</latitud>
+                    <altitud>460</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="300">300</distancia>
+                <fotografias>
+                    <fotografia>murallas_pamplona.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Ayuntamiento de Pamplona</nombre>
+                <descripcion>Sede municipal barroca del siglo XVIII, desde cuyo balcón se lanza el cohete que da inicio a los Sanfermines cada 6 de julio.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6447</longitud>
+                    <latitud>42.8196</latitud>
+                    <altitud>448</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="350">350</distancia>
+                <fotografias>
+                    <fotografia>ayuntamiento_pamplona.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+            <hito>
+                <nombre>Recorrido del Encierro</nombre>
+                <descripcion>Calle Santo Domingo y Estafeta, el famoso trayecto de 850 metros de los Sanfermines que cada julio atrae visitantes de todo el mundo.</descripcion>
+                <coordenadas>
+                    <longitud>-1.6441</longitud>
+                    <latitud>42.8209</latitud>
+                    <altitud>450</altitud>
+                </coordenadas>
+                <distancia unidades="m" anterior="200">200</distancia>
+                <fotografias>
+                    <fotografia>encierro_pamplona.jpg</fotografia>
+                </fotografias>
+            </hito>
+
+        </hitos>
+
+        <planimetria>planimetria_r4.kml</planimetria>
+        <altimetria>altimetria_r4.svg</altimetria>
+
+    </ruta>
+
+</rutas>

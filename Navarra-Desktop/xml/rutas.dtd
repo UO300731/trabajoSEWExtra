@@ -1,0 +1,68 @@
+<!--
+    rutas.dtd
+    DTD para el archivo XML de rutas turísticas de Navarra
+    @author: Olai Navarro
+-->
+
+<!ELEMENT rutas (ruta+)>
+
+<!ELEMENT ruta (nombre, tipo, transporte, fechaInicio?, horaInicio?, duracion, agencia, descripcion, publico, inicio, recomendacion, referencias, hitos, planimetria, altimetria)>
+<!ATTLIST ruta
+    id ID #REQUIRED
+>
+
+<!-- Datos generales de la ruta -->
+<!ELEMENT nombre       (#PCDATA)>
+<!ELEMENT tipo         (#PCDATA)>
+<!ELEMENT transporte   (#PCDATA)>
+<!ELEMENT duracion     (#PCDATA)>
+<!ELEMENT agencia      (#PCDATA)>
+<!ELEMENT descripcion  (#PCDATA)>
+<!ELEMENT publico      (#PCDATA)>
+<!ELEMENT recomendacion (#PCDATA)>
+<!ELEMENT planimetria  (#PCDATA)>
+<!ELEMENT altimetria   (#PCDATA)>
+
+<!-- Fecha y hora de inicio (opcionales) -->
+<!ELEMENT fechaInicio  (#PCDATA)>
+<!ATTLIST fechaInicio
+    opcional (si | no) "si"
+>
+<!ELEMENT horaInicio   (#PCDATA)>
+<!ATTLIST horaInicio
+    opcional (si | no) "si"
+>
+
+<!-- Lugar de inicio de la ruta -->
+<!ELEMENT inicio (lugar, direccion, coordenadas)>
+<!ELEMENT lugar     (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+<!-- Coordenadas geográficas (reutilizadas en inicio e hitos) -->
+<!ELEMENT coordenadas (longitud, latitud, altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud  (#PCDATA)>
+<!ELEMENT altitud  (#PCDATA)>
+
+<!-- Referencias bibliográficas (mínimo 3) -->
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!-- Hitos de la ruta (mínimo 5) -->
+<!ELEMENT hitos (hito+)>
+
+<!ELEMENT hito (nombre, descripcion, coordenadas, distancia, fotografias, galeria_videos?)>
+
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+    unidades CDATA #REQUIRED
+    anterior CDATA #REQUIRED
+>
+
+<!-- Galería de fotografías del hito (mínimo 1, máximo 5) -->
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia  (#PCDATA)>
+
+<!-- Galería de vídeos del hito (opcional, máximo 3) -->
+<!ELEMENT galeria_videos (video+)>
+<!ELEMENT video (#PCDATA)>

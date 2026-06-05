@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Navarra - Inicio</title>
+
+    <meta name="author" content="Olai Navarro Baizan" />
+    <meta name="description" content="Web turística sobre Navarra con rutas, gastronomía, meteorología y recursos turísticos" />
+    <meta name="keywords" content="Navarra, turismo, rutas, gastronomía, meteorología" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="estilo/layout.css" />
+
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="js/carrusel.js" defer></script>
+    <script src="js/noticias.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1><a href="index.html">Navarra Turismo</a></h1>
+
+    <nav>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="gastronomia.html">Gastronomía</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="juego.html">Juego</a>
+        <a href="reservas.php">Reservas</a>
+        <a href="ayuda.html">Ayuda</a>
+    </nav>
+
+</header>
+
+<nav aria-label="Ruta de navegación">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+    </ol>
+</nav>
+
+<main>
+
+    <!-- CARRUSEL -->
+    <section>
+
+        <h2>Descubre Navarra</h2>
+
+        <figure>
+            <img src="multimedia/navarra1.jpg"
+                 alt="Paisaje de Navarra" />
+        </figure>
+
+    </section>
+
+    <!-- DESCRIPCIÓN-->
+    <section>
+
+        <h2>Bienvenido a Navarra</h2>
+
+        <p>
+            Navarra es una comunidad del norte de España con gran riqueza natural,
+            histórica y gastronómica.
+        </p>
+
+        <p>
+            En este sitio podrás consultar rutas turísticas, meteorología,
+            gastronomía y participar en un juego interactivo.
+        </p>
+
+    </section>
+
+    <!-- NOTICIAS -->
+    <section>
+
+        <h2>Noticias de Navarra</h2>
+
+        <div></div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>Proyecto: Software y Estándares para la Web</p>
+    <p>Grado en Ingeniería Informática del Software</p>
+
+</footer>
+
+<!--JS-->
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* CARRUSEL  */
+    const carrusel = new Carrusel();
+    carrusel.iniciar();
+
+    /* NOTICIAS */
+    const contenedorNoticias = document.querySelector("section:nth-of-type(3) div");
+
+    const noticias = new Noticias("Navarra");
+
+    noticias.buscar()
+        .then(json => {
+            const datos = noticias.procesarInformacion(json);
+            noticias.mostrarNoticias(datos, contenedorNoticias);
+        })
+        .catch(error => {
+            console.error("Error cargando noticias:", error);
+        });
+
+});
+
+</script>
+
+</body>
+</html>

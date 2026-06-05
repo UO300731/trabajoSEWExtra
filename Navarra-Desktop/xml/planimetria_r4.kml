@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta Histórica por el Casco Antiguo de Pamplona</name>
+    <Placemark>
+      <name>Plaza del Castillo</name>
+      <description>Corazón de Pamplona, gran plaza porticada donde se concentra la vida social de la ciudad desde la Edad Media.</description>
+      <Point>
+        <coordinates>-1.6436,42.8188,449</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Catedral de Santa María la Real</name>
+      <description>Catedral gótica del siglo XIV-XV con claustro y museo diocesano. Una de las más importantes del Camino de Santiago.</description>
+      <Point>
+        <coordinates>-1.6390,42.8219,455</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Murallas de Pamplona</name>
+      <description>Imponente sistema defensivo del siglo XVI, uno de los mejor conservados de Europa. Declaradas Bien de Interés Cultural.</description>
+      <Point>
+        <coordinates>-1.6360,42.8230,460</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ayuntamiento de Pamplona</name>
+      <description>Sede municipal barroca del siglo XVIII, desde cuyo balcón se lanza el cohete que da inicio a los Sanfermines cada 6 de julio.</description>
+      <Point>
+        <coordinates>-1.6447,42.8196,448</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Recorrido del Encierro</name>
+      <description>Calle Santo Domingo y Estafeta, el famoso trayecto de 850 metros de los Sanfermines que cada julio atrae visitantes de todo el mundo.</description>
+      <Point>
+        <coordinates>-1.6441,42.8209,450</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Ruta Histórica por el Casco Antiguo de Pamplona</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-1.6436,42.8188,449
+-1.6390,42.8219,455
+-1.6360,42.8230,460
+-1.6447,42.8196,448
+-1.6441,42.8209,450
+-1.6436,42.8188,449</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>#ff0000ff</color>
+          <width>4</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

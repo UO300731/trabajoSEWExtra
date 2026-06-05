@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navarra - Gastronomía</title>
+    <meta name="author" content="Olai" />
+    <meta name="description" content="Información sobre la gastronomía típica de Navarra" />
+    <meta name="keywords" content="gastronomía, Navarra, comida típica" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/x-icon" href="multimedia/icono.ico" />
+</head>
+
+<body>
+
+<header>
+    <h1><a href="index.html" title="Inicio">Navarra Turismo</a></h1>
+
+     <nav>
+        <a href="index.html">Inicio</a>
+        <a href="gastronomia.html"class="activo">Gastronomía</a>
+        <a href="rutas.html">Rutas</a>
+        <a href="meteorologia.html">Meteorología</a>
+        <a href="juego.html">Juego</a>
+        <a href="reservas.php">Reservas</a>
+        <a href="ayuda.html">Ayuda</a>
+    </nav>
+	
+</header>
+
+<nav aria-label="Ruta de navegación">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><strong>Gastronomia</strong></li>
+    </ol>
+</nav>
+
+<main>
+
+    <!-- INFORMACIÓN GENERAL -->
+    <section id="info-general">
+
+        <h2>Gastronomía de Navarra</h2>
+
+        <p>
+            La gastronomía navarra es una de las más reconocidas del norte de España.
+            Destaca por la calidad de sus verduras, carnes y productos tradicionales.
+            Algunos platos típicos son el cordero al chilindrón, los espárragos de Navarra
+            y los pimientos del piquillo.
+        </p>
+
+        <!-- IMAGEN ADAPTABLE Y ACCESIBLE -->
+        <picture>
+				<source media=" (max-width:799px)" srcset="multimedia/gastronomia-tablet.jpg" />
+				<source media=" (min-width:800px)" srcset="multimedia/gastronomia.jpg" />
+				<source media=" (max-width:465px)" srcset="multimedia/gastronomia-movil.jpg" />
+				<img alt="Gastronomia" src="multimedia/gastronomia.jpg" />
+		</picture>
+
+    </section>
+
+    <!-- LISTA ORDENADA -->
+    <section>
+
+        <h2>Platos típicos</h2>
+
+        <ol>
+            <li>Pochas a la navarra</li>
+            <li>Cordero al chilindrón</li>
+            <li>Trucha a la navarra</li>
+        </ol>
+
+    </section>
+
+    <!-- LISTA NO ORDENADA CON LISTA ANIDADA -->
+    <section>
+
+        <h2>Productos tradicionales</h2>
+
+        <ul>
+            <li>Espárragos de Navarra</li>
+
+            <li>Pimientos del piquillo
+                <ul>
+                    <li>Rellenos de carne</li>
+                    <li>Rellenos de bacalao</li>
+                    <li>A la brasa</li>
+                </ul>
+            </li>
+
+            <li>Queso Roncal</li>
+        </ul>
+
+    </section>
+
+    <!-- LISTA DE DEFINICIÓN -->
+    <aside>
+
+        <h2>Términos gastronómicos</h2>
+
+        <dl>
+            <dt>Pochas</dt>
+            <dd>Variedad de alubia blanca típica de Navarra.</dd>
+
+            <dt>Chilindrón</dt>
+            <dd>Salsa elaborada con tomate, cebolla y pimientos.</dd>
+
+            <dt>Piquillo</dt>
+            <dd>Pimiento rojo pequeño asado al fuego y muy utilizado en Navarra.</dd>
+        </dl>
+
+    </aside>
+
+    <!-- TABLA ACCESIBLE -->
+    <section id="tabla-gastronomia">
+
+        <h2>Productos típicos de Navarra</h2>
+
+        <table>
+
+            <caption>Información sobre productos navarros</caption>
+
+            <tr>
+                <th id="producto" scope="col">Producto</th>
+                <th id="descripcion" scope="col">Descripción</th>
+            </tr>
+
+            <tr>
+                <td headers="producto">Espárragos</td>
+                <td headers="descripcion">
+                    Verdura blanca muy famosa por su calidad.
+                </td>
+            </tr>
+
+            <tr>
+                <td headers="producto">Pimientos del piquillo</td>
+                <td headers="descripcion">
+                    Pimientos rojos asados y dulces.
+                </td>
+            </tr>
+
+            <tr>
+                <td headers="producto">Queso Roncal</td>
+                <td headers="descripcion">
+                    Queso elaborado con leche de oveja.
+                </td>
+            </tr>
+
+            <tr>
+                <td headers="producto">Pacharán</td>
+                <td headers="descripcion">
+                    Licor tradicional elaborado con endrinas.
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- VIDEO -->
+    <section>
+
+        <h2>Vídeo sobre la gastronomía navarra</h2>
+
+        <video controls preload="auto">
+
+            <source src="multimedia/gastronomia.mp4"
+                    type="video/mp4" />
+
+            <source src="multimedia/gastronomia.webm"
+                    type="video/webm" />
+
+            Tu navegador no soporta vídeo HTML5.
+
+        </video>
+
+    </section>
+
+    <!-- AUDIO OPCIONAL -->
+    <section>
+
+        <h2>Audio tradicional</h2>
+
+        <audio controls>
+
+            <source src="multimedia/audio.mp3"
+                    type="audio/mpeg" />
+
+            <source src="multimedia/audio.wav"
+                    type="audio/wav" />
+
+            Tu navegador no soporta audio HTML5.
+
+        </audio>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>

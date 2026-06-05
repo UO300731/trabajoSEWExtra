@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bardenas Reales</name>
+    <Placemark>
+      <name>Castildetierra</name>
+      <description>Formación geológica icónica de las Bardenas, cabezo erosionado símbolo del parque, a 290 m de altitud.</description>
+      <Point>
+        <coordinates>-1.5161,42.2103,290</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Plana de la Negra</name>
+      <description>Zona elevada de la Bardena Blanca con vistas panorámicas al desierto.</description>
+      <Point>
+        <coordinates>-1.5350,42.1700,320</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mirador de Juan Obispo</name>
+      <description>Punto panorámico con vista sobre la Bardena Blanca y el Cabezo de la Negra.</description>
+      <Point>
+        <coordinates>-1.5150,42.1750,310</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ralla de Eguaras</name>
+      <description>Espectacular cárcava de erosión natural con formas caprichosas talladas por el agua.</description>
+      <Point>
+        <coordinates>-1.5050,42.1800,295</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Centro de visitantes</name>
+      <description>Fin de la ruta. El centro ofrece exposición permanente sobre la geología y fauna de las Bardenas.</description>
+      <Point>
+        <coordinates>-1.5280,42.1770,280</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Bardenas Reales</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-1.5161,42.2103,290
+-1.5350,42.1700,320
+-1.5150,42.1750,310
+-1.5050,42.1800,295
+-1.5280,42.1770,280
+-1.5161,42.2103,290</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>#ff0000ff</color>
+          <width>4</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

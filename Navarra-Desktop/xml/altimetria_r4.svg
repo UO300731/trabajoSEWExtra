@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900" height="500" viewBox="0 0 900 500">
+  <rect x="0" y="0" width="900" height="500" fill="white" stroke-width="1" stroke="#cccccc" />
+  <text x="80" y="35" font-size="16" font-family="Verdana" style="font-weight:bold; fill:#333333;">Altimetría: Ruta Histórica por el Casco Antiguo de Pamplona</text>
+  <line x1="80" y1="430.0" x2="870" y2="430.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="430.0" x2="80" y2="430.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="435.0" font-size="11" font-family="Verdana" style="fill:#555555;">448 m</text>
+  <line x1="80" y1="356.0000000000007" x2="870" y2="356.0000000000007" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="356.0000000000007" x2="80" y2="356.0000000000007" stroke="#555555" stroke-width="1" />
+  <text x="5" y="361.0000000000007" font-size="11" font-family="Verdana" style="fill:#555555;">450 m</text>
+  <line x1="80" y1="281.99999999999966" x2="870" y2="281.99999999999966" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="281.99999999999966" x2="80" y2="281.99999999999966" stroke="#555555" stroke-width="1" />
+  <text x="5" y="286.99999999999966" font-size="11" font-family="Verdana" style="fill:#555555;">453 m</text>
+  <line x1="80" y1="208.00000000000037" x2="870" y2="208.00000000000037" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="208.00000000000037" x2="80" y2="208.00000000000037" stroke="#555555" stroke-width="1" />
+  <text x="5" y="213.00000000000037" font-size="11" font-family="Verdana" style="fill:#555555;">455 m</text>
+  <line x1="80" y1="133.99999999999932" x2="870" y2="133.99999999999932" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="133.99999999999932" x2="80" y2="133.99999999999932" stroke="#555555" stroke-width="1" />
+  <text x="5" y="138.99999999999932" font-size="11" font-family="Verdana" style="fill:#555555;">458 m</text>
+  <line x1="80" y1="60.0" x2="870" y2="60.0" stroke="#dddddd" stroke-width="1" />
+  <line x1="75" y1="60.0" x2="80" y2="60.0" stroke="#555555" stroke-width="1" />
+  <text x="5" y="65.0" font-size="11" font-family="Verdana" style="fill:#555555;">460 m</text>
+  <line x1="80" y1="60" x2="80" y2="430" stroke="#555555" stroke-width="2" />
+  <text x="15" y="245" font-size="12" font-family="Verdana" style="fill:#333333; writing-mode:tb; glyph-orientation-vertical:0;">Altitud (m)</text>
+  <line x1="80.0" y1="430" x2="80.0" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="65.0" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">0 m</text>
+  <line x1="80.0" y1="430" x2="80.0" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="65.0" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">0 m</text>
+  <line x1="353.46153846153845" y1="430" x2="353.46153846153845" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="338.46153846153845" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">450 m</text>
+  <line x1="535.7692307692307" y1="430" x2="535.7692307692307" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="520.7692307692307" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">750 m</text>
+  <line x1="748.4615384615385" y1="430" x2="748.4615384615385" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="733.4615384615385" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">1100 m</text>
+  <line x1="870" y1="430" x2="870" y2="435" stroke="#555555" stroke-width="1" />
+  <text x="855" y="450" font-size="11" font-family="Verdana" style="fill:#555555;">1300 m</text>
+  <line x1="80" y1="430" x2="870" y2="430" stroke="#555555" stroke-width="2" />
+  <text x="435" y="480" font-size="12" font-family="Verdana" style="fill:#333333;">Distancia (m)</text>
+  <polyline points="80.0,399.1666666666667 80.0,214.16666666666669 353.46153846153845,60.0 535.7692307692307,430.0 748.4615384615385,368.3333333333333 870,430 80,430 80.0,399.1666666666667" stroke="#1a6bb5" stroke-width="2" fill="rgba(26,107,181,0.25)" />
+  <circle cx="80.0" cy="399.1666666666667" r="5" fill="#c0392b" />
+  <text x="87.0" y="399.1666666666667" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Plaza del Castillo</text>
+  <circle cx="80.0" cy="214.16666666666669" r="5" fill="#c0392b" />
+  <text x="87.0" y="214.16666666666669" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Catedral de Santa María la Real</text>
+  <circle cx="353.46153846153845" cy="60.0" r="5" fill="#c0392b" />
+  <text x="360.46153846153845" y="60.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Murallas de Pamplona</text>
+  <circle cx="535.7692307692307" cy="430.0" r="5" fill="#c0392b" />
+  <text x="542.7692307692307" y="430.0" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Ayuntamiento de Pamplona</text>
+  <circle cx="748.4615384615385" cy="368.3333333333333" r="5" fill="#c0392b" />
+  <text x="755.4615384615385" y="368.3333333333333" font-size="10" font-family="Verdana" style="fill:#222222; writing-mode:tb; glyph-orientation-vertical:0;">Recorrido del Encierro</text>
+</svg>

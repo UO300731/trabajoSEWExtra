@@ -1,0 +1,8 @@
+id_recurso,id_tipo,nombre,descripcion,plazas_totales,fecha_inicio,fecha_fin,precio,activo
+1,1,Museo de Navarra,Visita guiada al Museo de Navarra en Pamplona con colecciones de arqueología arte medieval y pintura.,30,2026-07-01 10:00:00,2026-12-31 18:00:00,8.00,1
+2,2,Ruta del Camino Francés,Etapa guiada del Camino de Santiago a su paso por Navarra desde Roncesvalles hasta Pamplona.,20,2026-06-01 08:00:00,2026-10-31 20:00:00,15.00,1
+3,3,Cena de pintxos en el Casco Viejo,Recorrido gastronómico nocturno por los mejores bares de pintxos del casco antiguo de Pamplona.,15,2026-06-15 20:00:00,2026-12-31 23:59:00,35.00,1
+4,4,Parador de Olite,Noche en el Parador Nacional del Castillo de Olite con desayuno incluido y visita al castillo medieval.,10,2026-07-15 14:00:00,2026-12-31 12:00:00,120.00,1
+5,5,Sanfermines Encierro y Fiestas,Pack de actividades durante los Sanfermines tribuna para el encierro entrada a la plaza y visita cultural.,50,2026-07-06 06:00:00,2026-07-14 23:59:00,75.00,1
+6,2,Ruta por las Bardenas Reales,Excursión en 4x4 por el parque natural de las Bardenas Reales Patrimonio de la Biosfera de la UNESCO.,12,2026-05-01 09:00:00,2026-10-31 19:00:00,45.00,1
+7,1,Ciudadela de Pamplona,Visita guiada a la ciudadela renacentista de Pamplona una de las mejor conservadas de Europa.,25,2026-04-01 10:00:00,2026-11-30 17:00:00,5.00,1

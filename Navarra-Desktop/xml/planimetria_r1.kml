@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta Medieval de Olite</name>
+    <Placemark>
+      <name>Palacio Real de Olite</name>
+      <description>Palacio Real de los Reyes de Navarra, declarado Monumento Nacional en 1925.</description>
+      <Point>
+        <coordinates>-1.6496,42.4816,400</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Iglesia de Santa María la Real</name>
+      <description>Iglesia gótica del siglo XIII con una de las portadas más importantes de la escultura gótica navarra.</description>
+      <Point>
+        <coordinates>-1.6501,42.4812,398</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Plaza de los Teobaldos</name>
+      <description>Plaza histórica frente al Palacio Viejo, hoy Parador de Turismo.</description>
+      <Point>
+        <coordinates>-1.6503,42.4819,398</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Iglesia de San Pedro</name>
+      <description>Iglesia románica con claustro y torre gótica rematada en aguja.</description>
+      <Point>
+        <coordinates>-1.6488,42.4820,399</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Murallas medievales</name>
+      <description>Restos defensivos del recinto amurallado medieval de Olite.</description>
+      <Point>
+        <coordinates>-1.6510,42.4808,395</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Ruta Medieval de Olite</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-1.6496,42.4816,400
+-1.6501,42.4812,398
+-1.6503,42.4819,398
+-1.6488,42.4820,399
+-1.6510,42.4808,395
+-1.6496,42.4816,400</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>#ff0000ff</color>
+          <width>4</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

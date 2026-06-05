@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Selva de Irati</name>
+    <Placemark>
+      <name>Embalse de Irabia</name>
+      <description>Lago artificial construido en 1922, rodeado de hayedo-abetal. Punto de partida del recorrido circular.</description>
+      <Point>
+        <coordinates>-1.2190,42.9750,820</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fábrica de armas de Orbaizeta</name>
+      <description>Ruinas industriales del siglo XVIII, antigua fábrica de armas en plena selva.</description>
+      <Point>
+        <coordinates>-1.2350,42.9650,890</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hayedo central</name>
+      <description>Corazón del bosque de hayas centenario, segundo mayor hayedo-abetal de Europa.</description>
+      <Point>
+        <coordinates>-1.2100,42.9800,950</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mirador de Tapla</name>
+      <description>Vista panorámica del valle de Aezkoa y las cimas del Pirineo.</description>
+      <Point>
+        <coordinates>-1.2050,42.9820,980</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Refugio forestal de Irati</name>
+      <description>Punto de descanso en la ruta, refugio de montaña en el interior del bosque.</description>
+      <Point>
+        <coordinates>-1.2000,42.9780,970</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Selva de Irati</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-1.2190,42.9750,820
+-1.2350,42.9650,890
+-1.2100,42.9800,950
+-1.2050,42.9820,980
+-1.2000,42.9780,970
+-1.2190,42.9750,820</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>#ff0000ff</color>
+          <width>4</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>
