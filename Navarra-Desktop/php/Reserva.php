@@ -11,9 +11,9 @@ class Reserva {
         $this->db = (new DB())->conn;
     }
 
-    /* =========================
+    /* 
        PLAZAS OCUPADAS
-    ========================== */
+    */
     public function plazasOcupadas($id_recurso) {
 
         $sql = "
@@ -26,9 +26,9 @@ class Reserva {
         return (int)$this->db->query($sql)->fetch_assoc()['ocupadas'];
     }
 
-    /* =========================
+    /* 
        PLAZAS TOTALES
-    ========================== */
+    */
     public function plazasTotales($id_recurso) {
 
         $sql = "
@@ -40,18 +40,18 @@ class Reserva {
         return (int)$this->db->query($sql)->fetch_assoc()['plazas_totales'];
     }
 
-    /* =========================
+    /* 
        PLAZAS LIBRES
-    ========================== */
+     */
     public function plazasLibres($id_recurso) {
 
         return $this->plazasTotales($id_recurso)
              - $this->plazasOcupadas($id_recurso);
     }
 
-    /* =========================
-       CREAR RESERVA (CON CONTROL REAL)
-    ========================== */
+    /* 
+       CREAR RESERVA 
+   = */
     public function crear($id_usuario, $id_recurso, $num_plazas, $precio_unitario) {
 
         $libres = $this->plazasLibres($id_recurso);
@@ -72,9 +72,9 @@ class Reserva {
         return $this->db->query($sql);
     }
 
-    /* =========================
+    /* 
        RESERVAS POR USUARIO
-    ========================== */
+     */
     public function getByUser($id_usuario) {
 
         $sql = "
@@ -93,9 +93,9 @@ class Reserva {
         return $this->db->query($sql)->fetch_all(MYSQLI_ASSOC);
     }
 
-    /* =========================
+    /* 
        ANULAR
-    ========================== */
+     */
     public function anular($id_reserva) {
 
         $sql = "

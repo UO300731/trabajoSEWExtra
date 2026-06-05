@@ -65,14 +65,14 @@ function userId() {
 </section>
 
 <?php
-/* ================= LOGOUT ================= */
+/*  LOGOUT */
 if ($accion === "logout") {
     session_destroy();
     header("Location: reservas.php");
     exit;
 }
 
-/* ================= REGISTRO ================= */
+/* REGISTRO*/
 if ($accion === "registro") {
 
     if ($_POST) {
@@ -97,7 +97,7 @@ if ($accion === "registro") {
 <?php } ?>
 
 <?php
-/* ================= LOGIN ================= */
+/* LOGIN  */
 if ($accion === "login") {
 
     if ($_POST) {
@@ -128,7 +128,7 @@ if ($accion === "login") {
 <?php } ?>
 
 <?php
-/* ================= MIS RESERVAS ================= */
+/* MIS RESERVAS  */
 if ($accion === "mis") {
 
     if (!isset($_SESSION['user'])) {
@@ -169,7 +169,7 @@ if ($accion === "mis") {
 <?php } ?>
 
 <?php
-/* ================= ANULAR ================= */
+/* ANULAR */
 if ($accion === "anular") {
 
     if (isset($_GET['id'])) {
@@ -182,7 +182,7 @@ if ($accion === "anular") {
 ?>
 
 <?php
-/* ================= RESERVAR ================= */
+/*  RESERVAR  */
 if ($accion === "reservar") {
 
     if (!isset($_SESSION['user'])) {
@@ -241,7 +241,7 @@ if ($accion === "reservar") {
 <?php } ?>
 
 <?php
-/* ================= LISTADO ================= */
+/* LISTADO*/
 if ($accion === "") {
 
     $recursos = $recurso->getAll();
