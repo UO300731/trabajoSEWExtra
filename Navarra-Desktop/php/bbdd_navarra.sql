@@ -58,7 +58,6 @@ CREATE TABLE IF NOT EXISTS estados_reserva (
 CREATE TABLE IF NOT EXISTS usuarios (
     id_usuario      INT          UNSIGNED NOT NULL AUTO_INCREMENT,
     nombre          VARCHAR(80)  NOT NULL,
-    apellidos       VARCHAR(120) NOT NULL,
     email           VARCHAR(180) NOT NULL,
     password_hash   VARCHAR(255) NOT NULL,
     telefono        VARCHAR(20)           DEFAULT NULL,

@@ -77,7 +77,12 @@ if ($accion === "registro") {
 
     if ($_POST) {
         $ok = $usuario->registrar($_POST['nombre'], $_POST['email'], $_POST['pass']);
-        echo $ok ? "<p>Usuario creado correctamente</p>" : "<p>Error en registro</p>";
+		if ($ok) {
+			header("Location: reservas.php?accion=login&registrado=1");
+		exit;
+		} else {
+			echo "<p>Error en registro</p>";
+		}
     }
 ?>
 
@@ -115,6 +120,7 @@ if ($accion === "login") {
 
 <section>
     <h2>Login</h2>
+	<h3>No tienes cuenta? -> Registrate primero!</h3>
 
     <form method="post">
         <p><label>Email <input name="email" type="email" required></label></p>
@@ -142,15 +148,16 @@ if ($accion === "mis") {
 <section>
     <h2>Mis reservas</h2>
 
+    <?php if (isset($_GET['confirmada'])): ?>
+        <p><strong>✓ Tu reserva ha sido confirmada correctamente.</strong></p>
+    <?php endif; ?>
+
     <?php foreach ($res as $r): ?>
         <article>
             <h3><?= htmlspecialchars($r['nombre_recurso']) ?></h3>
-
             <p>Plazas: <?= $r['num_plazas'] ?></p>
             <p>Total: <?= $r['precio_total'] ?> €</p>
-
             <p>Estado: <?= htmlspecialchars($r['estado'] ?? 'Activo') ?></p>
-
             <?php if ($r['id_estado'] != 3): ?>
                 <p>
                     <a href="reservas.php?accion=anular&id=<?= $r['id_reserva'] ?>">
@@ -205,9 +212,9 @@ if ($accion === "reservar") {
         );
 
         if ($ok) {
-            header("Location: reservas.php?accion=mis");
-            exit;
-        } else {
+			header("Location: reservas.php?accion=mis&confirmada=1");
+			exit;
+		} else {
             $mensaje = "No hay plazas suficientes";
         }
     }

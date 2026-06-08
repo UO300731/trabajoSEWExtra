@@ -121,14 +121,10 @@ class RutaDatos {
             const $h = $(el);
 
             const fotos = [];
-            $h.find("galeria foto").each((j, f) => {
-                fotos.push($(f).text().trim());
-            });
+            $h.find("fotografias fotografia").each((j, f) => {
+				fotos.push($(f).text().trim());
+			});
 
-            const videos = [];
-            $h.find("galeria video").each((j, v) => {
-                videos.push($(v).text().trim());
-            });
 
             this.hitos.push({
                 nombre: $h.children("nombre").text().trim(),
@@ -137,8 +133,7 @@ class RutaDatos {
                 lon: parseFloat($h.find("longitud").text()),
                 alt: parseFloat($h.find("altitud").text()),
                 distancia: parseFloat($h.find("distancia").text()),
-                fotos: fotos,
-                videos: videos
+                fotos: fotos
             });
         });
     }
@@ -200,7 +195,6 @@ class VistaInfoRuta {
                     <p>${h.descripcion}</p>
                     <p>Altitud: ${h.alt} m — Distancia desde anterior: ${h.distancia} m</p>
                     ${VistaInfoRuta._generarFotosHTML(h.fotos, h.nombre)}
-                    ${VistaInfoRuta._generarVideosHTML(h.videos, h.nombre)}
                 </li>`;
         });
         html += "</ol>";
@@ -227,39 +221,6 @@ class VistaInfoRuta {
         });
         html += `<figcaption>Galería de imágenes: ${nombreHito}</figcaption>`;
         html += "</figure>";
-        return html;
-    }
-
-    /**
-     * Genera la galería de vídeos de un hito (opcional).
-     * Cada vídeo se sirve como elemento <video> con al menos 2 fuentes
-     * si el archivo tiene par mp4/webm con el mismo nombre base.
-     * Si solo hay un formato disponible se incluye igualmente.
-     *
-     * @param   {string[]} videos     Array de nombres de archivo de vídeo
-     * @param   {string}   nombreHito Nombre del hito para accesibilidad
-     * @returns {string}
-     */
-    static _generarVideosHTML(videos, nombreHito) {
-        if (!videos || videos.length === 0) {
-            return "";
-        }
-        let html = "";
-        videos.forEach((video, i) => {
-            // Derivar los dos formatos a partir del nombre base
-            const base = video.replace(/\.[^/.]+$/, "");
-            const mp4 = base + ".mp4";
-            const webm = base + ".webm";
-            html += `
-                <figure>
-                    <video controls>
-                        <source src="multimedia/${mp4}"  type="video/mp4">
-                        <source src="multimedia/${webm}" type="video/webm">
-                        Tu navegador no soporta el elemento de vídeo.
-                    </video>
-                    <figcaption>${nombreHito} — vídeo ${i + 1}</figcaption>
-                </figure>`;
-        });
         return html;
     }
 

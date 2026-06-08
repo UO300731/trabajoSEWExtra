@@ -47,29 +47,38 @@ class Juego {
             }
         ];
 
-        this.indice = 0;
-        this.puntuacion = 0;
+        const guardado = sessionStorage.getItem("juego_estado");
+
+        if (guardado) {
+            const estado = JSON.parse(guardado);
+            this.indice = estado.indice;
+            this.puntuacion = estado.puntuacion;
+        } else {
+            this.indice = 0;
+            this.puntuacion = 0;
+        }
+    }
+
+    guardarEstado() {
+        sessionStorage.setItem("juego_estado", JSON.stringify({
+            indice: this.indice,
+            puntuacion: this.puntuacion
+        }));
     }
 
     iniciar() {
 
         const main = document.querySelector("main");
-
         this.seccion = document.createElement("section");
 
         this.seccion.innerHTML = `
-        <h2>Juego de preguntas</h2>
-
-        <h3></h3>
-
-        <p class="info">Responde todas las preguntas para obtener tu puntuación.</p>
-
-        <form></form>
-
-        <button type="button">Siguiente</button>
-
-        <p class="mensaje"></p>
-    `;
+            <h2>Juego de preguntas</h2>
+            <h3></h3>
+            <p class="info">Responde todas las preguntas para obtener tu puntuación.</p>
+            <form></form>
+            <button type="button">Siguiente</button>
+            <p class="mensaje"></p>
+        `;
 
         main.appendChild(this.seccion);
 
@@ -81,29 +90,28 @@ class Juego {
 
         this.boton.addEventListener("click", () => this.siguiente());
 
-        this.mostrar();
+        // Si ya había terminado, mostrar resultado directamente
+        if (this.indice >= this.preguntas.length) {
+            this.finalizar();
+        } else {
+            this.mostrar();
+        }
     }
 
     mostrar() {
 
         const p = this.preguntas[this.indice];
-
         this.titulo.textContent = p.pregunta;
-
         this.opciones.innerHTML = "";
 
         p.opciones.forEach((opcion, i) => {
-
             const label = document.createElement("label");
-
             const input = document.createElement("input");
             input.type = "radio";
             input.name = "respuesta";
             input.value = i;
-
             label.appendChild(input);
             label.appendChild(document.createTextNode(" " + opcion));
-
             this.opciones.appendChild(label);
             this.opciones.appendChild(document.createElement("br"));
         });
@@ -120,16 +128,12 @@ class Juego {
 
         this.mensaje.textContent = "";
 
-        if (this.indice >= this.preguntas.length) {
-            this.finalizar();
-            return;
-        }
-
         if (parseInt(seleccion.value) === this.preguntas[this.indice].correcta) {
             this.puntuacion++;
         }
 
         this.indice++;
+        this.guardarEstado(); // guardar tras cada respuesta
 
         if (this.indice < this.preguntas.length) {
             this.mostrar();
@@ -140,18 +144,41 @@ class Juego {
 
     finalizar() {
 
-        // limpiar contenido del juego
+        sessionStorage.removeItem("juego_estado"); // limpiar al terminar
+
         this.seccion.innerHTML = "";
 
         const titulo = document.createElement("h2");
         titulo.textContent = "Resultado final";
 
         const resultado = document.createElement("p");
-        resultado.textContent =
-`Puntuación: ${this.puntuacion} / ${this.preguntas.length}`;
+        resultado.textContent = `Puntuación: ${this.puntuacion} / ${this.preguntas.length}`;
+
+        const reiniciar = document.createElement("button");
+        reiniciar.type = "button";
+        reiniciar.textContent = "Jugar de nuevo";
+        reiniciar.addEventListener("click", () => {
+            this.indice = 0;
+            this.puntuacion = 0;
+            this.seccion.innerHTML = `
+                <h2>Juego de preguntas</h2>
+                <h3></h3>
+                <p class="info">Responde todas las preguntas para obtener tu puntuación.</p>
+                <form></form>
+                <button type="button">Siguiente</button>
+                <p class="mensaje"></p>
+            `;
+            this.titulo = this.seccion.querySelector("h3");
+            this.opciones = this.seccion.querySelector("form");
+            this.boton = this.seccion.querySelector("button");
+            this.mensaje = this.seccion.querySelector(".mensaje");
+            this.boton.addEventListener("click", () => this.siguiente());
+            this.mostrar();
+        });
 
         this.seccion.appendChild(titulo);
         this.seccion.appendChild(resultado);
+        this.seccion.appendChild(reiniciar);
     }
 }
 

@@ -140,6 +140,24 @@ section svg {
     display: block;
 }
  
+
+nav[role="tablist"] {
+    /* contenedor: puedes ajustar gap si las separas */
+    gap: 0.5rem; /* especificidad: nav[role] */
+}
+
+nav[role="tablist"] button {
+    padding: 0.75rem 1.5rem;   /* más alto y ancho */
+    font-size: 1.1rem;         /* texto más grande */
+    min-width: 8rem;           /* anchura mínima */
+    cursor: pointer;
+}
+
+nav[role="tablist"] button[aria-selected="true"] {
+    /* pestaña activa, para que destaque */
+    font-weight: bold;
+}
+
 /* RESPONSIVE TABLET — RUTAS */
  
 @media (max-width: 799px) {

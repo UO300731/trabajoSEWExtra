@@ -1,5 +1,9 @@
 /* Especificidad: (0,0,1) */
 /* Advertencia W3C aceptada: contraste verificado WCAG AAA */
+html {
+    font-size: 112.5%;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;

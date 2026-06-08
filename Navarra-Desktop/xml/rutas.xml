@@ -12,11 +12,7 @@
         <horaInicio opcional="si"></horaInicio>
         <duracion>3 horas</duracion>
         <agencia>NavarraTur</agencia>
-
-        <descripcion>
-            Recorrido por la ciudad medieval de Olite, antigua corte de los reyes de Navarra.
-        </descripcion>
-
+        <descripcion>Recorrido por la ciudad medieval de Olite, antigua corte de los reyes de Navarra.</descripcion>
         <publico>Todos los públicos</publico>
 
         <inicio>
@@ -49,7 +45,8 @@
                 </coordenadas>
                 <distancia unidades="m" anterior="0">0</distancia>
                 <fotografias>
-                    <fotografia>palacio_olite.jpg</fotografia>
+                    <fotografia>palacio_olite_1.jpg</fotografia>
+                    <fotografia>palacio_olite_2.jpg</fotografia>
                 </fotografias>
             </hito>
 
@@ -63,7 +60,8 @@
                 </coordenadas>
                 <distancia unidades="m" anterior="60">60</distancia>
                 <fotografias>
-                    <fotografia>iglesia_santa_maria.jpg</fotografia>
+                    <fotografia>iglesia_santa_maria_1.jpg</fotografia>
+                    <fotografia>iglesia_santa_maria_2.jpg</fotografia>
                 </fotografias>
             </hito>
 
@@ -105,7 +103,8 @@
                 </coordenadas>
                 <distancia unidades="m" anterior="150">150</distancia>
                 <fotografias>
-                    <fotografia>murallas_olite.jpg</fotografia>
+                    <fotografia>murallas_olite_1.jpg</fotografia>
+                    <fotografia>murallas_olite_2.jpg</fotografia>
                 </fotografias>
             </hito>
 
@@ -126,11 +125,7 @@
         <horaInicio opcional="si"></horaInicio>
         <duracion>5 horas</duracion>
         <agencia>Sin agencia</agencia>
-
-        <descripcion>
-            Uno de los bosques de hayas y abetos mejor conservados de Europa, con 17.195 hectáreas en los valles de Aezkoa y Salazar.
-        </descripcion>
-
+        <descripcion>Uno de los bosques de hayas y abetos mejor conservados de Europa, con 17.195 hectáreas en los valles de Aezkoa y Salazar.</descripcion>
         <publico>Personas con buena forma física</publico>
 
         <inicio>
@@ -163,7 +158,8 @@
                 </coordenadas>
                 <distancia unidades="m" anterior="0">0</distancia>
                 <fotografias>
-                    <fotografia>embalse_irabia.jpg</fotografia>
+                    <fotografia>embalse_irabia_1.jpg</fotografia>
+                    <fotografia>embalse_irabia_2.jpg</fotografia>
                 </fotografias>
             </hito>
 
@@ -177,7 +173,8 @@
                 </coordenadas>
                 <distancia unidades="m" anterior="400">400</distancia>
                 <fotografias>
-                    <fotografia>fabrica_orbaizeta.jpg</fotografia>
+                    <fotografia>fabrica_orbaizeta_1.jpg</fotografia>
+                    <fotografia>fabrica_orbaizeta_2.jpg</fotografia>
                 </fotografias>
             </hito>
 
@@ -240,11 +237,7 @@
         <horaInicio opcional="si"></horaInicio>
         <duracion>4 horas</duracion>
         <agencia>NaturaTur</agencia>
-
-        <descripcion>
-            Parque natural semidesértico único en Europa, Reserva de la Biosfera de la UNESCO, con formaciones geológicas de arcilla, yesos y arenisca.
-        </descripcion>
-
+        <descripcion>Parque natural semidesértico único en Europa, Reserva de la Biosfera de la UNESCO, con formaciones geológicas de arcilla, yesos y arenisca.</descripcion>
         <publico>Todos los públicos</publico>
 
         <inicio>
@@ -354,11 +347,7 @@
         <horaInicio opcional="si"></horaInicio>
         <duracion>2 horas</duracion>
         <agencia>Turismo de Navarra</agencia>
-
-        <descripcion>
-            Recorrido por el casco histórico de Pamplona, capital de Navarra, ciudad fundada por el general romano Pompeyo en el 74 a.C. Declarada Patrimonio Cultural, la ruta discurre por sus calles medievales, la catedral gótica, las murallas y la famosa Plaza del Castillo.
-        </descripcion>
-
+        <descripcion>Recorrido por el casco histórico de Pamplona, capital de Navarra, ciudad fundada por el general romano Pompeyo en el 74 a.C. Declarada Patrimonio Cultural, la ruta discurre por sus calles medievales, la catedral gótica, las murallas y la famosa Plaza del Castillo.</descripcion>
         <publico>Todos los públicos, incluidos tercera edad y familias con niños</publico>
 
         <inicio>
